@@ -1,0 +1,483 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'roboto-r';
+	src: url('../font/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'roboto-b';
+	src: url('../font/Roboto-Bold.ttf');
+}
+body {
+	font-family: roboto-r;
+}
+.container {
+	max-width: 1290px;
+	margin: auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.col-4 {
+	flex-basis: 33.3%;
+	max-width: 33.33%;
+	width: 33.33%;
+}
+li {
+	list-style-type: none;
+
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+	/*----HEADER QISMI----*/
+
+.header__top {
+	background-color: #0F1035;
+	padding: 19px 0;
+}
+.header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header__top a {
+	color: #fff;
+}
+.header__top--menu a {
+	margin-right: 20px;
+}
+.header a:hover {
+	text-decoration: underline;
+}
+.header ul {
+	display: flex;
+	align-items: center;
+}
+.header__bottom {
+	padding: 23px 0;
+}
+.header__menu a {
+	margin-left: 30px;
+}
+
+/*----	JOINUS BO'LIMI-----*/
+
+.joinus {
+	align-items: center;
+	background-color: #D3F1F3;
+	padding: 17px 0;
+	text-align: center;
+	display: flex;
+	justify-content: center;	
+}
+.joinus a {
+	position: relative;
+}
+.joinus a:hover::before {
+	display: block;
+}
+.joinus a::before {
+	content: '';
+	display: none;
+	position: absolute;
+	width: 100%;
+	bottom: -20px;
+	height: 2px;
+	background-color: #111;
+}
+
+	/*----GET BO'LIMI------*/
+
+.get {
+	height: 584px;
+	background-image: url('../img/mainbg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 40px 0;
+}
+.get__title {
+	font-size: 40px;
+	font-family: roboto-b;
+	line-height: 48px;
+	max-width: 488px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.get__text {
+	font-size: 27px;
+}
+.get form {
+	margin-top: auto;
+}
+.get input {
+	width: 340px;
+	padding: 13px 22px;
+	font-size: 16px;
+	border-radius: 3px;
+	border: none;
+}
+
+.get button {
+	font-family: roboto-b;
+	font-size: 16px;
+	border: none;
+	background-color: #190083;
+	color: #fff;
+	border-radius: 3px;
+	padding: 12.5px 26px;
+	margin-left: 32px;
+}
+
+/*----	FULL QISIMI-----*/
+
+.full {
+	padding-top: 92px;
+	padding-bottom: 110px;
+	text-align: center;
+	font-size: 22px;
+}
+.full__title {
+	font-size: 40px;
+	font-family: roboto-b;
+	margin-bottom: 50px;
+}
+.full__text {
+	margin-bottom: 81px;
+}
+.full__box--title {
+	font-family: roboto-b;
+	margin-bottom: 20px;
+	margin-top: 35px;
+}
+.full__box--text {
+	font-family: roboto-r;
+	margin-top: 20px;
+	height: 56px;
+	font-size: 18px;
+}
+.full__btn {
+	background-color: #190083;
+	color: #fff;
+	border: none;
+	width: 148px;
+	height: 52px;
+	border-radius: 3px;
+	margin-top: 80px;
+	font-family: roboto-b;
+	font-size: 16px;
+	padding: 15px 24px;
+}	
+
+/*-------EXP QISMI--------*/
+.exp {
+	position: relative;
+	padding: 111px 0;
+	background: url('../img/expbg.jpg') no-repeat center center/cover;
+	height: 904px;
+
+}
+.exp__title {
+	font-family: roboto-b;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: center;
+}
+.comment {
+	position: absolute;
+	right: 0;
+	bottom: 162px;
+	background-color: #fff;
+	padding: 60px;
+	display: flex;
+	align-items: center;
+	width: 85%;
+	font-size: 18px;
+}
+.comment img {
+	margin-right: 50px;
+}
+.comment__title {
+	line-height: 42px;
+	font-size: 21px;
+	font-family: roboto-b;
+	margin-bottom: 17px;
+}
+.comment__pagination {
+	position: absolute;
+	bottom: 111px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.comment__pagination span.active {
+	background-color: #fff;
+}
+.comment__pagination span {
+	background: rgba(255, 255, 255, 0.2);
+	border: 2px solid #FFFFFF;
+	border-radius: 50%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	margin: 0 9px;
+}
+
+/*----STUDENTS BOSHLANDI------*/
+
+.students {
+	position: relative;
+	padding-top: 104px;
+	background-color: #F6F6F8;
+}
+.students .students__title {
+	/*position: absolute;*/
+	margin-top: 106px;
+	margin-bottom: 40px;
+	font-family: roboto-b;
+	align-items: center;
+	text-align: center;
+	font-size: 40px;
+	line-height: 48px;
+}
+.students .students__text {
+	text-align: center;
+}
+.students__title {
+	margin-top: px;
+}
+.students__tt {
+	margin-bottom: 100px;
+}
+.students__img {
+	position: relative;
+	height: 185px;
+	width: 190px;
+	margin: 0 15px;
+	text-align: center;
+	border-bottom: 3px solid #C2CCD4;
+
+	/*background-color: #C2CCD4;*/
+
+}
+.students_bg {
+	/*background-color: #F6F6F8;*/
+	margin-top: -104px;
+}
+.social__des {
+	margin-top: 19px;
+	font-family: roboto-r;
+}
+.students__social {
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+	padding-left: 15px;
+}
+.students__btn {
+	margin-top: 80px;
+	font-family: roboto-b;
+	font-size: 16px;
+	border: none;
+	background-color: #190083;
+	color: #fff;
+	border-radius: 3px;
+	padding: 12.5px 26px;
+	margin-left: 45%;
+	margin-bottom: 111px;
+
+}
+
+/*--------career qismi boshlandi-------*/
+.career {
+	background-color: #F3E02B;
+	text-align: center;
+}
+.career__title {
+	padding-top: 111px;
+	font-family: roboto-b;
+	font-size: 40px;
+
+}
+.career__text {
+	margin-top: 41px;
+	font-size: 22px;
+	line-height: 32px;
+}
+.career__bt {
+	margin: auto;
+	margin-top: 79px;
+	margin-bottom: 111px;
+}
+
+/*---------------LEADING QISMI---------------------*/
+.leading {
+	text-align: center;
+	align-items: center;
+	position: relative;
+	margin-bottom: 109.89px;
+}
+.leading__title {
+	font-size: 40px;
+	line-height: 48px;
+	font-family: roboto-b;
+	margin-top: 110px;
+	margin-bottom: 100px;
+}
+.leading__text {
+	background: url(../img/leadingbg.jpg) no-repeat center center/cover;
+	width: 100%;
+	height: 634.11px;
+}
+.leading__des {
+	position: absolute;
+	background-color: #fff;
+	width: 500px;
+	height: 474px;
+	margin-top: 80px;
+	margin-left: 80px;
+	margin-bottom: 80px;
+	font-size: 22px;
+	line-height: 32px;
+	padding-top: 71px;
+}
+.leading__des img {
+	margin-top: 59px;
+}
+/*---------------TAKE QISIM-------------------*/
+
+.take {
+	overflow: hidden;
+	position: relative;
+	background-color: #EBEEF3;
+	width: 100%;
+	height: 595px;
+	text-align: center;
+}
+.take__title {
+	padding-top: 38.98px;
+	padding-bottom: 35px;
+	font-family: roboto-b;
+	margin-top: 37.89px;
+	font-size: 40px;
+}
+.take__text {
+	font-size: 22px;
+	line-height: 32px;
+	padding-bottom: 147.11px;
+}
+.take__img {
+	position: relative;
+	padding-left: 93px;
+	padding-right: 823px;
+}
+.take__phone {
+	position: absolute;
+	padding-left: 520px;
+	margin-top: -91px;
+}
+/*----------------JOB QISMI----------------*/
+.job {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	background-color: #0F1035;
+	color: #fff;
+	height: 461px;
+
+}
+.job__title {
+	font-family: roboto-b;
+	font-size: 40px;
+	line-height: 48px;
+	padding-top: 97px;
+	padding-bottom: 40px;
+}
+.job__text {
+	height: 32px;
+	font-size: 22px;
+	line-height: 32px;
+}
+.job__input {
+	border: none;
+	border-radius: 3px;
+	font-size: 16px;
+	width: 340px;
+	height: 46px;
+	margin-right: 32px;
+}
+.job__btn {
+	margin-top: 40px;
+	background-color: #FF1100;
+	height: 46px;
+	border: none;
+	font-size: 16px;
+	color: #fff;
+	width: 108px;
+	border-radius: 3px;
+}
+/*-------------BOTTOM QISMI---------------*/
+.bottom {
+	margin-top: 85px;
+	color: #fff;
+	font-size: 18px;
+}
+.bottom a {
+	color: #fff;
+}
+.btn_all:hover {
+	cursor: pointer;
+	box-shadow: 3px 2px 2px 2px #555;
+}
+
+/*---------------MARQUEE QISMI*/
+.marquee {
+  /*width: 450px;*/
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  width: max-content;
+
+  padding-left: 100%;
+  /* show the marquee just outside the paragraph */
+  will-change: transform;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+  animation-play-state: paused
+}
+
+
+@keyframes marquee {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+
+/* Respect user preferences about animations */
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee span {
+    animation-iteration-count: 1;
+    animation-duration: 0.01; 
+    /* instead of animation: none, so an animationend event is 
+     * still available, if previously attached.
+     */
+    width: auto;
+    padding-left: 0;
+  }
+}
